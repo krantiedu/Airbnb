@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reserv</title>
+    
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/responce_index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 170vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+}
+.left{
+    height: 90%;
+    width: 45%;
+    /* background-color: red; */
+    position: relative;
+
+}
+.right{
+    height: 60%;
+    border-radius: 10px;
+    border: 2px solid #dadada;
+    width: 45%;
+    /* background-color: blue; */
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left>h1{
+   font-weight: 200; 
+margin-top: 100px;
+}
+.text{
+    width: 100%;
+    height: 20vh;
+    /* background-color: blueviolet; */
+    border-radius: 10px;
+    border: 2px solid #dadada;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.text>h3{
+    margin-top: 30px;
+    font-size: 1.6vw;
+    font-weight: 300;
+}
+.left>h3{
+    margin-bottom: 10px;
+}
+.left>h2{
+    margin-bottom: 10px;
+}
+.left>h4{
+    margin-bottom: 5px;
+    /* border-bottom: 2px solid #dadada; */
+}
+.left>h5{
+    position: absolute;
+    left: 400px;
+    font-size: 1.2vw;
+    text-decoration: underline;
+}
+.left>h6{
+    position: absolute;
+    left: 400px;
+    font-size: 1.2vw;
+    text-decoration: underline;
+}
+.left>.first_h3{
+    font-size: 1.5vw;
+    margin-top: 70px;
+}
+.text1{
+    width: 100%;
+    height: 20vh;
+    /* background-color: blue; */
+    border-radius: 10px;
+    border: 2px solid #dadada;
+    margin-bottom: 10px;
+    /* padding-top: 10px; */
+
+}
+.text12{
+    width: 100%;
+    height: 10vh;
+    /* background-color: rgb(155, 82, 82); */
+    border-radius: 10px;
+    border-bottom: 2px solid #dadada;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.text12>i{
+    margin-left: 450px;
+    top: 56%;
+    font-size: 1.5vw;
+    position: absolute;
+    
+    /* margin-bottom: 100px; */
+}
+.text1>h3{
+   color: #dadada;
+   font-weight: 200;
+   margin-top: 20px;
+   margin-left: 10px;
+}
+.left>.sec_h6{
+  /* margin-left: 10px; */
+  position: absolute;
+  left: 5%;
+  font-size: .7vw;
+}
+.left>button{
+    width: 100%;
+    background-color: #F1265D;
+    height: 7vh;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: none;
+    color: white;
+    font-size: 1.2vw;
+}
+.left>.sec_h5{
+    text-align: center;
+    text-decoration: none;
+    /* margin-left: 0px; */
+    position: absolute;
+    left: 47%;
+
+}
+.button{
+  width: 100%;
+  height: 22vh;
+  /* background-color: chartreuse; */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.button1{
+    height: 10vh;
+    width: 100%;
+    /* background-color: #F1265D; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.button2{
+    height: 10vh;
+    width: 100%;
+    /* background-color: #F1265D; */
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border: 2px solid black;
+}
+.button2>i{
+   font-size: 2vw;
+
+}
+.button2>h3{
+    font-size: 1vw;
+    font-weight: 200;
+    margin-left: 200px;
+    margin-top: -20px;
+}
+.but{
+    height: 100%;
+    width: 30%;
+    /* background-color: red; */
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.but>img:nth-child(1){
+  height: 20px;
+  width: 20px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+.but:nth-child(3)>svg{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.but:nth-child(2)>svg{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.right1{
+    width: 90%;
+    height: 10vh;
+    /* background-color: red; */
+}
+.right>.right1:nth-child(1){
+    height: 20vh;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-bottom: 2px solid #dadada;
+}
+.right>.right1:nth-child(1)>img{
+    height: 130px;
+    border-radius: 10px;
+    width: 130px;
+}
+.right>.right1:nth-child(1)>h5{
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: -120px;
+    margin-left: 150px;
+}
+.right>.right1:nth-child(1)>h4{
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: -2px;
+    margin-left: 150px;
+}
+.right>.right1:nth-child(1)>h6{
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.right>.right1:nth-child(1)>.thr_h6{
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: -15px;
+    margin-left: 300px;
+}
+.right>.right1:nth-child(2)>h4{
+    margin-top: 10px;
+    font-size: 1.2vw;
+    margin-left: 10px;
+    font-weight: 200;
+}
+.right>.right1:nth-child(2)>h4>span:nth-child(1){
+    color: red;
+}
+.right>.right1:nth-child(2)>h4>span:nth-child(2){
+    font-weight: 900;
+}
+.right>.right1:nth-child(4)>h5{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.3vw;
+}
+.right>.right1:nth-child(4)>h6{
+    margin-top: -20px;
+    margin-left: 300px;
+    font-size: 1.3vw;
+}
+.right>.right1:nth-child(3){
+    height: 25vh;
+}
+.right>.right1:nth-child(3)>h2{
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.right>.right1:nth-child(3)>h3{
+    font-weight: 200;
+    margin-bottom: 9px;
+  }
+  .right>.right1:nth-child(3)>h4{
+    margin-top: -120px;
+    margin-left: 300px;
+    font-size: 1.3vw;
+  }
+  .right>.right1:nth-child(3)>h5{
+    margin-top: 10px;
+    margin-left: 300px;
+    font-size: 1.3vw;
+  }
+  
+@media screen and (max-width:900px) {
+    #main{
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 200vh;
+    }
+    .left{
+        width: 100%;
+
+    }
+    .right{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .right1{
+        width: 100%;
+    }
+    .left>h6{
+        position: absolute;
+        left: 300px;
+        font-size: 3vw;
+        text-decoration: underline;
+    }
+    .left>h5{
+        position: absolute;
+        left: 300px;
+        font-size: 3vw;
+        text-decoration: underline;
+    }
+    .left>.first_h3{
+        font-size: 5vw;
+        margin-top: 70px;
+    }
+    .left>.sec_h6{
+        /* margin-left: 10px; */
+        position: absolute;
+        left: 5%;
+        font-size: 2vw;
+    }
+    .left>button{
+        width: 100%;
+        background-color: #F1265D;
+        height: 7vh;
+        border-radius: 10px;
+        margin-top: 30px;
+        border: none;
+        color: white;
+        font-size: 3vw;
+    }
+    .button2>h3{
+        font-size: 3vw;
+        font-weight: 200;
+        margin-left: 200px;
+        margin-top: -20px;
+    }
+    .right>.right1:nth-child(4)>h5{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 3vw;
+    }
+    .right>.right1:nth-child(1)>h5{
+        font-size: 4vw;
+        font-weight: 200;
+        margin-top: -120px;
+        margin-left: 150px;
+    }
+    
+.right>.right1:nth-child(1)>h4{
+    font-size: 3vw;
+    font-weight: 200;
+    margin-top: -2px;
+    margin-left: 150px;
+}
+.right>.right1:nth-child(1)>h6{
+    font-size: 3vw;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.right>.right1:nth-child(1)>.thr_h6{
+    font-size: 3vw;
+    font-weight: 200;
+    margin-top: -15px;
+    margin-left: 300px;
+}
+.right>.right1:nth-child(2)>h4{
+    margin-top: 10px;
+    font-size: 4vw;
+    margin-left: 10px;
+    font-weight: 200;
+}
+.right>.right1:nth-child(3)>h4{
+    margin-top: -120px;
+    margin-left: 300px;
+    font-size: 3vw;
+  }
+  .right>.right1:nth-child(3)>h5{
+    margin-top: 10px;
+    margin-left: 300px;
+    font-size: 3vw;
+  }
+  .right>.right1:nth-child(4)>h6{
+    margin-top: -20px;
+    margin-left: 300px;
+    font-size: 3vw;
+}
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+          <img src="https://1000logos.net/wp-content/uploads/2023/01/Airbnb-logo.png" alt="">
+
+        </div>
+
+        <div class="nav-mid">
+          <a href="#">Anywhere</a>
+          <a href="#">Anyweek</a>
+          <a style="color: gray;" href="#">Add guests</a>
+          <div class="nav-icon">
+            <i style="cursor: pointer;" class="ri-search-line"></i>
+          </div>
+        </div>
+
+        <div class="nav-last">
+          <p>Airbab your home</p>
+          <i style="font-size: 25px;"class="ri-global-line"></i>
+          <div class="nav-last-last">
+            <i style="cursor: pointer;"  class="ri-menu-line"></i>
+            <div class="nav-pic">
+              <img src="https://images.unsplash.com/photo-1677419424166-a65d8aec0d51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div id="main">
+    
+    
+     <div class="left">
+        <h1><i class="ri-arrow-left-s-line"></i>Request To book</h1>
+        <div class="text">
+            <h3>Good price.</h3>
+            <p>Your dates are ₹3,783 less than the avg. nightly rate over the last 3 months.</p>
+        <path d="M25.556 5H10a1 1 0 0 0-.993.883L9 6v15.556a1 1 0 0 0 .206.608l.087.1 16.505 16.505 16.971-16.971L26.263 5.293a1 1 0 0 0-.575-.284L25.556 5z" fill-opacity=".2"></path>
+
+        </div>
+        <h2>Your trip</h2>
+        <h3>Dates</h3>
+        <h6>Edit</h6>
+        <h4>7–14 Mar</h4>
+        <h3>Guests</h3>
+        <h4>1 guest</h4>
+        <h5>Edit</h5>
+        <h3 class="first_h3">Log in or sign up to book</h3>
+        <div class="text1">
+          <div class="text12">
+            <h5>Country/Region</h5>
+            <h3>India(+91)</h3>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <h3>Phone Number</h3>
+        </div>
+        <h6 class="sec_h6">We’ll call or text you to confirm your number. Standard message and data rates apply. Privacy Policy</h6>
+        <button>Continue</button>
+        <h5 class="sec_h5">or</h5>
+        <div style="background-color: white;" class="button">
+          <div class="button1">
+            <div class="but"><img src="https://th.bing.com/th?q=Facebook+Post+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt=""></div>
+            <div class="but"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 20px; width: 20px;"><g transform="translate(4.376957 4.073369)"><path d="m19.7480429 20.9266305c2.813-2.625 4.063-7 3.313-11.18799996h-11.188v4.62599996h6.375c-.25 1.5-1.125 2.75-2.375 3.562z" fill="#4285f4"></path><path d="m1.24804285 17.2396305c.82223 1.6196 2.0014 3.0314 3.4486 4.129s3.1247 1.8523 4.906 2.2073c1.78130005.355 3.62000005.301 5.37740005-.1579s3.3877-1.3108 4.768-2.4914l-3.875-3c-3.313 2.188-8.81300005 1.375-10.68800005-3.75z" fill="#34a853"></path><path d="m5.18573285 14.1766305c-.5-1.563-.5-3 0-4.56299996l-3.938-3.062c-1.438 2.875-1.875 6.93799996 0 10.68799996z" fill="#fbbc02"></path><path d="m5.18604285 9.61463054c1.374-4.31301 7.25000005-6.81301 11.18700005-3.126l3.438-3.37401c-4.875-4.688-14.37500005-4.5-18.56300005 3.43601l3.938 3.063z" fill="#ea4335"></path></g></svg></div>
+            <div class="but"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" focusable="false" style="height: 20px; width: 20px; display: block; fill: currentcolor;"><path d="m13.3 2.1a5.1 5.1 0 0 1 3.8-2.1 5.1 5.1 0 0 1 -1.2 3.8 4.1 4.1 0 0 1 -3.6 1.7 4.5 4.5 0 0 1 1-3.4zm-5 3.7c-2.8 0-5.8 2.5-5.8 7.3 0 4.9 3.5 10.9 6.3 10.9 1 0 2.5-1 4-1s2.6.9 4 .9c3.1 0 5.3-6.4 5.3-6.4a5.3 5.3 0 0 1 -3.2-4.9 5.2 5.2 0 0 1 2.6-4.5 5.4 5.4 0 0 0 -4.7-2.4c-2 0-3.5 1.1-4.3 1.1-.9 0-2.4-1-4.2-1z"></path></svg></div>
+          </div>
+          <div class="button2">
+            <i class="ri-mail-line"></i>
+            <h3>Continue With email</h3>
+          </div>
+        </div>
+      </div>
+     <div class="right">
+      <div class="right1">
+        <img src="https://a0.muscache.com/im/pictures/c7d80ba3-78c2-49c4-a6ff-14cd4cb8efdb.jpg?aki_policy=large" alt="">
+        <h5>Castle</h5>
+        <h4>Exclusive Palace Stay sleeps 8. The Rani Vilas</h4>
+        <h6>4.76
+          (17 reviews)
+         </h6>
+        <h6 class="thr_h6">Superhost</h6>
+      </div>
+      <div class="right1">
+        <h4>Your booking is protected by <span>air</span><span>cover</span></h4>
+      </div>
+      <div class="right1">
+        <h2>Price details</h2>
+        <h3>₹35,000 x 7 nights</h3>
+        <h3>Weekly stay discount</h3>
+        <h3 style="text-decoration: underline;">Airbnb service fee </h3>
+        <h3 style="text-decoration: underline;">Taxes</h3>
+        <h4>₹2,45,000</h4>
+        <h5>  -₹51,450</h5>
+        <h5>₹27,324.81</h5>
+        <h5>₹34,839</h5>
+      </div>
+      <div class="right1">
+        <h5>Total (INR)</h5>
+        <h6>₹2,55,713.81</h6>
+      </div>
+     </div>
+     <!-- <div class="nav2"></div> -->
+   </div> 
+</body>
+</html>

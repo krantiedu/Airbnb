@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>airbnb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/responce_index.css' />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="logo">
+          <img src="https://1000logos.net/wp-content/uploads/2023/01/Airbnb-logo.png" alt="">
+
+        </div>
+
+        <div class="nav-mid">
+          <a href="#">Anywhere</a>
+          <a href="#">Anyweek</a>
+          <a style="color: gray;" href="#">Add guests</a>
+          <div class="nav-icon">
+            <i style="cursor: pointer;" class="ri-search-line"></i>
+          </div>
+        </div>
+
+        <div class="nav-last">
+          <p>Airbab your home</p>
+          <i style="font-size: 25px;"class="ri-global-line"></i>
+          <div class="nav-last-last">
+            <i style="cursor: pointer;"  class="ri-menu-line"></i>
+            <div class="nav-pic">
+              <img src="https://images.unsplash.com/photo-1677419424166-a65d8aec0d51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-catagary">
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="logo">
+          <p>National Parks</p>
+        </div>
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="logo">
+          <p>Farms</p>
+        </div>
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="logo">
+          <p>OMG!</p>
+        </div>
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="logo">
+          <p>Mansions</p>
+        </div>
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt="logo">
+          <p>Luxe</p>
+        </div>
+       
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/0ff9740e-52a2-4cd5-ae5a-94e1bfb560d6.jpg" alt="logo">
+          <p>Containers</p>
+        </div>
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="logo">
+          <p>Amazing pools</p>
+        </div>
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg" alt="logo">
+          <p>Desert</p>
+        </div>
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="logo">
+          <p>Amazing views</p>
+        </div>
+        <div class="product">
+          <img src="https://a0.muscache.com/pictures/eb7ba4c0-ea38-4cbb-9db6-bdcc8baad585.jpg" alt="logo">
+          <p>Private rooms</p>
+        </div>
+      </div>
+
+     
+      <div class="all-cards">
+
+
+
+        <%properties.forEach(function(elem){ %>
+         <% if(logddinUser.products.indexOf(elem._id) == -1){ %>
+          <a style="text-decoration: none; color: black;" href="/propertydetails">
+            <div class="full-card">
+              <div class="card-template">
+          
+                <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="https://a0.muscache.com/im/pictures/miso/Hosting-614164090229310194/original/b8ca7196-38ab-4765-a8f8-87340bf6f0fc.jpeg?im_w=960" alt=""></div>
+        <div class="swiper-slide"><img src="https://a0.muscache.com/im/pictures/miso/Hosting-614164090229310194/original/cfd897ab-b963-4313-bff1-7a4b211c0665.jpeg?im_w=480" alt=""></div>
+        <div class="swiper-slide"><img src="https://a0.muscache.com/im/pictures/miso/Hosting-614164090229310194/original/f97e65e7-3c37-4c47-800f-90a78de78348.jpeg?im_w=480" alt=""></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="sp swiper-pagination"></div>
+          
+          <!-- If we need navigation buttons -->
+          <!-- <div class="prev-btn swiper-button-prev"></div>
+          <div class="next-btn swiper-button-next"></div> -->
+          
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+              
+              </div>
+              <div class="top-line">
+                <p>Naggar,india</p>
+                <p><i class="ri-star-s-fill"></i><span>5.0</span></p>
+              </div>
+              <div class="card-content">
+                <p>7.5km away from minal mall bhopal</p>
+                <p>6-11 march</p>
+                <h4>$2000 night</h4>
+              </div>
+            </div>
+          </a>
+         <% } %>
+        <%})%>
+        
+      </div>
+
+      <div class="popup-login">
+        <div class="top">
+          <a id="popup-login"  style="color: black;" href="/">Home</a><br>
+          <a id="popup-signup" href="#">sell property</a>
+        </div>
+        <hr>
+        <div class="bottom">
+          <a href="/host">Host an experience</a><br>
+          <a href="/dashboard"> Your Dashboard</a><br>
+          <a href="/logout">Logout</a>
+        </div>
+
+      </div>
+
+      <div class="search">
+        <div class="search-content">
+          <div class="search-1">
+              <p>Where</p>
+              <input placeholder="search destination" type="text">
+          </div>
+          <div class="search2">
+            <p>Check in</p>
+            <p style="color: rgba(0, 0, 0, 0.439);">Add dates</p>
+
+          </div>
+          <div class="search2">
+            <p>Check out</p>
+            <p style="color: rgba(0, 0, 0, 0.439);">Add dates</p>
+            
+          </div>
+          <div class="search2">
+            <p>Who</p>
+            <p style="color: rgba(0, 0, 0, 0.439);">Add guest</p>
+            
+          </div>
+          <div style="cursor: pointer;" id="login-btn" class="button">
+            <i class="ri-search-line"></i>
+            <p>Search</p>
+          </div>
+          <div style="color: #F0F0F0;" class="space">..</div>
+        </div>
+      </div>
+
+      
+
+      <div  class="signup">
+        <div style="z-index: 100;" class="signup-page">
+          <h1>Ptoperty Details</h1>
+          <form action="/property" method="post">
+            <input type="text" name="city" placeholder="city,contry" />
+            <input type="text" name="address" placeholder="Address" />
+            <input type="text" name="date" placeholder="Date" />
+            <input type="text" name="price" placeholder="Price" />
+            <input type="submit" value="Listed for selling" />
+          </form>
+          <i id="close-icon" class="ri-close-line"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+      const mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 300,
+   mousewheel: true,
+   coverflowEffect: {
+    rotate: 30,
+    slideShadows: true
+  },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+        
+
+     function menu(){
+      var menu = document.querySelector(".ri-menu-line");
+      var flag = 0;
+      menu.addEventListener("click",function(){
+        
+        var popup = document.querySelector(".popup-login");
+        if(flag === 0){
+          popup.style.display = "block";
+          flag = 1;
+        }
+        else{
+          popup.style.display = "none";
+          flag = 0;
+        }
+       
+        
+      })
+     }
+    menu();
+
+    function search(){
+      
+      var search = document.querySelector(".ri-search-line");
+      var btn = document.querySelector("#login-btn");
+      search.addEventListener("click",function(){
+        var popup = document.querySelector(".search");
+        popup.style.display = "flex";
+       })
+       btn.addEventListener("click",function(){
+        var popup = document.querySelector(".search");
+        popup.style.display = "none";
+       })
+
+    }
+
+    search();
+
+   
+
+    function signup(){
+      var signup = document.querySelector("#popup-signup");
+      var icon = document.querySelector("#close-icon");
+      signup.addEventListener("click",function(){
+        
+        var popup = document.querySelector(".signup-page");
+        popup.style.display = "block";
+        document.querySelector(".popup-login").style.display = "none";
+        
+       })
+       icon.addEventListener("click",function(){
+        
+        var popup = document.querySelector(".signup-page");
+        popup.style.display = "none";
+        
+       })
+    }
+    signup();
+    </script>
+  </body>
+</html>
